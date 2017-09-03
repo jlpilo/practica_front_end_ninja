@@ -15,6 +15,7 @@
     "babelify": "^7.3.0",
     "browser-sync": "^2.18.13",
     "browserify": "^14.4.0",
+    "cpy": "^5.1.0",
     "cssnano": "^3.10.0",
     "es6-symbol": "^3.1.1",
     "gulp": "^3.9.1",

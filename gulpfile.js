@@ -15,9 +15,10 @@ var Symbol = require('es6-symbol');
 var babelify=require('babelify-es6-polyfill');
 var imagemin = require("gulp-imagemin");
 var responsive = require("gulp-responsive");
+var cpy = require('cpy')
 
 
-gulp.task("default",["importHtml","js","imgres","sass"], function(){
+gulp.task("default",["importHtml","js","imgres","sass","fonts"], function(){
 
     browserSync.init({proxy:"http://127.0.0.1:3100/"});
 
@@ -66,6 +67,15 @@ gulp.task("js", function(){
         .pipe(uglify())
         .pipe(sourcemaps.write('./'))
         .pipe(gulp.dest("dist/"));
+});
+
+gulp.task("fonts", function(){
+    cpy(['src/fonts/*'], 'dist/fonts').then(() => {
+        console.log('fuentes copiadas');
+    });
+    cpy(['src/css/*'], 'dist/css').then(() => {
+        console.log('fuentes copiadas');
+    });
 });
 
 gulp.task("imgres", function(){

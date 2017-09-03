@@ -47,9 +47,14 @@ export default class CommentFormManager extends UIManager {
 
         let textareaFiels = this.element.find("textarea");
         const textareaLenght = textareaFiels[0].value.trim().split(" ").length;
+        console.log(textareaFiels);
         if (textareaLenght > 120) {
             errors=true;
             allerrorMessage +="El comentario no puede tener mas de 120 palabras</br>";
+        }
+        if (textareaFiels[0].value.length == 0) {
+            errors=true;
+            allerrorMessage +="El comentario no puede estar vacío</br>";
         }
         console.log(errors);
         if (errors){
