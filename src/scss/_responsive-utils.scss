@@ -1,0 +1,23 @@
+@mixin if-mobile-width1 {
+    @media (min-width: #{$mobile-portrait-width1}) {
+        @content;
+    }
+}
+
+@mixin if-mobile-width2 {
+    @media (min-width: #{$mobile-portrait-width2}) {
+        @content;
+    }
+}
+
+@mixin if-tablet-portrait{
+    @media (min-width: #{$tablet-portrait-width}) {
+        @content;
+    }
+}
+
+@mixin if-tablet-landscape{
+    @media (min-width: #{$tablet-landscape-width}){
+        @content;
+    }
+}

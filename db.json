@@ -1,0 +1,28 @@
+{
+  "comments": [
+    {
+      "article": "1",
+      "name": "Jose Luis",
+      "firstname": "Pilo",
+      "email": "joseluispilo@gmail.com",
+      "comment": "Buena descripcin del lugar. Cuando tenga vaciones ire por allí.",
+      "id": 1
+    },
+    {
+      "article": "1",
+      "name": "Manolo",
+      "firstname": "Gracia",
+      "email": "manolo@garcia.es",
+      "comment": "Muy lejos pero merece la pena el viajecito",
+      "id": 2
+    },
+    {
+      "article": "1",
+      "name": "Sara",
+      "firstname": "Itaca",
+      "email": "sara@itaca.es",
+      "comment": "Yo me apunto",
+      "id": 3
+    }
+  ]
+}

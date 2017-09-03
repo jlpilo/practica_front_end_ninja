@@ -1,0 +1,33 @@
+// Font families
+$main-font-family: 'Roboto Condensed', sans-serif;
+$title-font-family: 'Oswald', sans-serif;
+$title-font-family2: 'Encode Sans Semi Condensed', sans-serif;
+$logo-font-family:'Lobster', cursive;
+$body-font-family: $main-font-family;
+
+// Font sizes
+$font-size-base: 15px;
+$font-size-small: $font-size-base - 5px;
+$font-size-large: $font-size-base + 5px;
+$font-size-h1: $font-size-base + 15px;
+$font-size-h2: $font-size-base + 12px;
+$font-size-h3: $font-size-base + 9px;
+$font-size-h4: $font-size-base + 6px;
+$font-size-h5: $font-size-base + 3px;
+$font-size-h6: $font-size-base;
+/*#BEDAF0,#7699C1,#5C7089,#525A6D,#23272A,#BEDAF0,#7699C1,#5C7089*/
+// Base colors
+$color-claro: #BEDAF0;
+$color-medio: #7699C1;
+$color-oscuro: #04487b;
+
+// Main components colors
+$main-text-color: #525a6d;
+$links-color: $color-medio;
+
+// Responsive
+$mobile-portrait-width1: 375px;
+$mobile-portrait-width2: 480px;
+$mobile-landscape-width: 767px;
+$tablet-portrait-width: $mobile-landscape-width + 1;
+$tablet-landscape-width: 1024px;

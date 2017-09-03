@@ -1,0 +1,49 @@
+nav.menu{
+    width: 100%;
+    ul{
+        text-align: center;
+        display: inline-block;
+        width: 100%;
+        @include if-tablet-portrait{
+            border-top: 1px solid $color-claro;
+            border-bottom: 1px solid $color-claro;
+        }
+
+    }
+    li.item{
+        display: none;
+        width: 100%;
+        border-bottom: 1px solid $color-claro;
+        color:$color-oscuro;
+        font-weight: bold;
+        cursor: pointer;
+        padding: 15px;
+        &:hover{
+            background-color: $color-claro;
+        }
+        @include if-tablet-portrait{
+            display: inline-block !important;
+            width: auto;
+            border-bottom: 0;
+        }
+    }
+    #select_menu{
+        height: 47px;
+        background: #fb3b3b;
+        cursor: pointer;
+        @include if-tablet-portrait{
+            display: none !important;
+        }
+        i{
+            float: right;
+            padding: 8px 13px;
+            font-size: 32px;
+            color: #fff;
+        }
+    }
+}
+
+
+.hidden{
+    //display: none !important;
+}

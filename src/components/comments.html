@@ -1,0 +1,45 @@
+<section id="comments" class="comments-list loading">
+    <h2>Comentarios de nuestros lectores</h2>
+    <div class="ui-status ideal">
+        <div class="commentslist"></div>
+    </div>
+    <div class="ui-status loading">
+        <p>Cargando comentarios</p>
+        <img src="./img/loader.gif"/>
+    </div>
+    <div class="ui-status empty">
+        No se han hecho comentarios en este articulo.
+    </div>
+    <h3 class="commnent-t">Dejamos tu comentario sobre este articulo</h3>
+    <div class="new-comment">
+        <form novalidate class="insert-comment ideal">
+            <div class="form-status error">
+                <p class="title-error">Por favor corrija estos errores</p>
+                <p class="error-message"></p>
+            </div>
+            <div class="form-status loading">
+                <p>Enviando comentario</p>
+                <img src="./img/loader.gif"/>
+            </div>
+            <div class="form-status ideal">
+                <input type="hidden" name="idarticle" id="idarticle" value="1" required>
+                <label>Nombre</label>
+                <input type="text" name="name" id="name" placeholder="Su nombre" required>
+                <br/>
+                <label>Apellidos</label>
+                <input type="text" name="firstname" id="firstname" placeholder="Sus apellidos" required>
+                <br/>
+                <label>Email</label>
+                <input type="email" id="email" id="email" placeholder="Su email" required>
+                <br/>
+                <label>Comentario</label>
+                <br/>
+                <textarea name="comment" id="comment" placeholder="Escriba su comentario" required></textarea>
+                <input type="submit" id="send-comment" value="Enviar Comentario">
+                <p>Todos los campos son obligatorios</p>
+            </div>
+        </form>
+    </div>
+
+
+</section>
